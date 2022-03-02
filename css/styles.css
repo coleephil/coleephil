@@ -1,43 +1,70 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px;
+
+  font-size: 30px;
+  text-align: center;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+.item1 {
+  font-family: "Roboto Mono";
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.item2 {
+  background-color: #fed650;
+}
+.item3 {
+  background-color: black;
+  color: rgb(256, 204, 4);
+  font-family: "Roboto Mono";
+}
+.item4 {
+  background-color: white;
+  font-family: "Roboto Mono";
+}
+.item5 {
+  background-color: #ffc918;
+}
+.item6 {
+  background-color: black;
+  color: rgb(256, 204, 4);
+  font-family: "Roboto Mono";
+  font-size: 12pt;
+  padding: 12em;
+}
+.item7 {
+  background-color: black;
+  color: rgb(256, 204, 4);
+  font-family: "Roboto Mono";
+  padding: 8em;
+}
+.item8 {
+  background-color: #fdd840;
+}
+@media screen and (max-width: 599px) {
+  .column {
+    width: 50%;
+  }
+}
+.label {
+  font-size: 0.6em;
+}
+.text-wrap {
+  padding: 7em;
+}
+.black {
+  color: black;
+}
+.black:hover {
+  color: rgb(256, 204, 4);
 }
 a {
-    text-decoration: none;
-    color: #999;
+  color: rgb(256, 204, 4);
 }
 a:hover {
-    text-decoration: underline;
+  color: white;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+.credits {
+  font-size: 16pt;
 }
